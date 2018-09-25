@@ -353,11 +353,12 @@ List PanHepC(double time, NumericVector state, List parms){
   compartments[19] = dC3new_cured;
   compartments[20] = dC4new_cured;
   
-  List outlist(3);
+  List outlist(5);
   outlist[0] = compartments;
   outlist[1] = prev;
   outlist[2] = incHCC;
-      
+  outlist[3] = pop;
+  outlist[4] = infect;
   
   return outlist;
   
